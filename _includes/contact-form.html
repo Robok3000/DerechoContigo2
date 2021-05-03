@@ -11,14 +11,13 @@
     action="https://formspree.io/f/xzbydjgl"
     method="POST"
   >
-    <label>
-      Your email:
-      <input type="email" name="_replyto">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
+  <div class='medium-12 columns'>
+            <input class='required' name='name' placeholder='NOMBRE' type='text'>
+            <input class='required email' name='email' placeholder='EMAIL' type='text'>
+            <input class='required' name='subject' placeholder='ASUNTO' type='text'>
+            <textarea class='required' name='message' placeholder='MENSAJE'></textarea>
+            <input name="recipient" type="hidden" value="{{ site.email }}" />
+            <div class='spacing'></div>
 
     <!-- your other form fields go here -->
 
