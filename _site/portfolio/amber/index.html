@@ -46,7 +46,7 @@
         Menu
       </a>
     </div>
-    <section class='top-bar-section closed'>
+    <section class='top-bar-section open'>
       <ul class='right'>
 
 
@@ -191,7 +191,7 @@
 
 <div class='full dark'>
   <div class='row'>
-    <div class='large-8 columns large-centered'>
+    <div class='large-6 columns large-centered'>
       <div class="section-title">
   <p class="small-title">Contacto</p>
   <h2>¿Tienes alguna duda? ¡Contáctanos!</h2>
@@ -201,22 +201,20 @@
     <div class='large-8 medium-8 columns'>
       <div class='form'>
         <div class='row'>
-          <form id='contact_form' class='dark' method='POST'>
-            <div class='large-12 columns'>
-              <p id='thanks'>
-                Gracias por ponerte en contacto con nosotros. ¡Te responderemos a la brevedad!
-              </p>
-            </div>
-            <div class='medium-12 columns'>
-              <input class='required' name='name' placeholder='NOMBRE' type='text'>
-              <input class='required email' name='email' placeholder='EMAIL' type='text'>
-              <input class='required' name='subject' placeholder='ASUNTO' type='text'>
-              <textarea class='required' name='message' placeholder='MENSAJE'></textarea>
-              <input name="recipient" type="hidden" value="" />
-              <div class='spacing'></div>
-              <input class='button white' type='submit'>
-            </div>
-          </form>
+          <form action="https://formspree.io/f/xzbydjgl" method="POST">
+
+  <div class='medium-12 columns'>
+            <input class='required' name='name' placeholder='NOMBRE' type='text'>
+            <input class='required email' name='email' placeholder='EMAIL' type='text'>
+            <input class='required' name='subject' placeholder='ASUNTO' type='text'>
+            <textarea class='required' name='message' placeholder='MENSAJE'></textarea>
+            <input name="recipient" type="hidden" value="" />
+            <div class='spacing'></div>
+  </div>
+    <!-- your other form fields go here -->
+
+    <button type="submit">Send</button>
+  </form>
         </div>
       </div>
       <div class='four spacing'></div>
@@ -232,13 +230,14 @@
         <div class='contact-details'>
           <div class='content'>
             <h4>Nuestras oficinas:</h4>
-            <p>Avenida Siempre Viva 123, Santiago, CHILE</p>
+            <p>Santiago, CHILE</p>
             <h4>Teléfono 1:</h4>
             <p>+56 9 8211 8009</p>
             <h4>Teléfono 2:</h4>
             <p>+56 9 2033 9882</p>
-            <h4>Email:</h4>
-            <p>info@derechocontigo.cl</p>
+            <h4>MAIL</h4>
+            <p>contacto.derechocontigo
+            @gmail.com</p>
           </div>
         </div>
       </div>
@@ -253,11 +252,11 @@
   <div class='row'>
     <div class='medium-3 columns'>
       <div class='big-social'>
-        <a href='http://facebook.com/derechocontigo'>
+        <a href='https://www.facebook.com/DerechoContigoAbogados/'>
           <i class='fa fa-facebook'></i>
         </a>
         <h4>Facebook</h4>
-        <p>Conectate con nosotros a través de facebook</p>
+        <p>Conéctate con nosotros a través de Facebook</p>
       </div>
       <div class='two spacing'></div>
     </div>
@@ -273,7 +272,7 @@
     </div>
     <div class='medium-3 columns'>
       <div class='big-social'>
-        <a href='http://linkedin.com/derechocontigo'>
+        <a href='https://www.linkedin.com/company/derecho-contigo/'>
           <i class='fa fa-linkedin'></i>
         </a>
         <h4>Linkedin</h4>
@@ -302,12 +301,18 @@
   <div id="footer" class='centered-text'>
     <div class='row'>
       <div class='large-12 columns'>
-        <h4>©2021 Wrap theme. All rights reserved.</h4>
+        <h4>©2021 Links de Interés.</h4>
+        <a href='https://claveunica.gob.cl/'>Clave Única /</a>
+        <a href='https://ojv.pjud.cl/kpitec-ojv-web/tramite_facil'>Trámite Fácil /</a>
+        <a href='https://www.registrocivil.cl/principal/servicios-en-linea'>Certificados en Línea /</a>
+        <a href='https://homer.sii.cl/'>SII /</a>
+        <a href='https://www2.pjud.cl/web/guest/consulta-ciudadana'>Consulta Ciudadana /</a>
       </div>
     </div>
   </div>
   <div class="four spacing"></div>
 </div>
+
 
 <script src="/bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
 <script src="/bower_components/imagesloaded/imagesloaded.pkgd.js" type="text/javascript"></script>
@@ -326,6 +331,7 @@
 <script src="/assets/javascripts/app.js" type="text/javascript"></script>
 <script src="/assets/javascripts/boot.js" type="text/javascript"></script>
 <script src="/assets/javascripts/wp.js" type="text/javascript"></script>
+
 
 
   </body>
